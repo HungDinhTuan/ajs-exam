@@ -1,0 +1,28 @@
+.inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.inputs input {
+  padding: 8px;
+  width: 200px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
