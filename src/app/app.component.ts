@@ -6,6 +6,7 @@ import {CardGridComponent} from './componets/card-gird/card-gird.component';
   selector: 'app-root',
   imports: [RouterOutlet, CardGridComponent],
   templateUrl: './app.component.html',
+  standalone: false,
   styleUrl: './app.component.css'
 })
 export class AppComponent {

@@ -8,16 +8,16 @@ import {CardGridComponent} from './componets/card-gird/card-gird.component';
 
 @NgModule({
   declarations: [
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppComponent,
     CardGridComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
 
