@@ -3,21 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import {CardGridComponent} from './componets/card-gird/card-gird.component';
-
+import {CardGridComponent} from './components/card-grid/card-grid.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardGridComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    CardGridComponent
+    RouterModule.forRoot([
+      { path: '', component: CardGridComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-

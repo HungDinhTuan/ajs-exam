@@ -1,11 +1,11 @@
 <div class="inputs">
-  <input [(ngModel)]="searchText" (input)="filterData()" placeholder="Enter text to search">
-  <input [(ngModel)]="categoryText" (input)="filterData()" placeholder="Search by categories">
+  <input [(ngModel)]="searchText" (input)="filterData()" placeholder="Enter text to search" />
+  <input [(ngModel)]="categoryText" (input)="filterData()" placeholder="Search by categories" />
 </div>
 
 <div class="grid">
   <div class="card" *ngFor="let card of filteredCards">
-    <img [src]="card.imageUrl" alt="{{card.title}}">
+    <img [src]="card.imageUrl" alt="{{card.title}}" />
     <h3>{{ card.title }}</h3>
     <p><strong>{{ card.author }}</strong></p>
     <p>{{ card.description }}</p>

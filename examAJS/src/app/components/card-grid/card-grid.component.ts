@@ -1,22 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { TECH_DATA } from '../../data/tech-data';
 import { TechCard } from '../../models/tech-card.model';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-card-grid',
-  templateUrl: 'card-gird.component.html',
-  styleUrls: ['card-gird.component.css']
+  standalone: false,
+  templateUrl: 'card-grid.component.html',
+  styleUrls: ['card-grid.component.css']
 })
-
 export class CardGridComponent implements OnInit {
   cards: TechCard[] = [];
   filteredCards: TechCard[] = [];
-  searchText : string = '';
-  categoryText : string = '';
+  searchText = '';
+  categoryText = '';
 
   ngOnInit() {
     this.cards = TECH_DATA;
-    this.filteredCards = [...this.filteredCards];
+    this.filteredCards = this.cards;
   }
 
   filterData() {
