@@ -1,4 +1,4 @@
-import { TechCard } from '../models/tech-card.model';
+import {TechCard} from '../data/tech-data';
 
 export const TECH_DATA: TechCard[] = [
   {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TECH_DATA } from '../../data/tech-data';
-import { TechCard } from '../../models/tech-card.model';
+import {TechCard} from '../../data/tech-data';
+import {TECH_DATA} from '../../models/tech-card.model';
 import {FormsModule} from '@angular/forms';
 
 @Component({
